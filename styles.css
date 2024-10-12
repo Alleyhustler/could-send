@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #1a1a2e00;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Transparent Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(15, 51, 96, 0); /* Fully transparent */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f9f871;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hero {
+    background-image: url('1.png'); /* Background image for hero */
+    background-size: cover;
+    background-position: center;
+    padding: 270px 20px;
+    text-align: center;
+    animation: slideDown 1s ease-in-out;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f9f871;
+}
+
+#hero p {
+    font-size: 24px;
+}
+
+#moonButton {
+    background-color: #ffcc29;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#moonButton:hover {
+    transform: scale(1.1);
+}
+
+#about, #couldnomics, #how-to-buy, #socials {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* Make it easier to position the inner box */
+}
+
+/* Shared Background for Couldnomics, How to Buy, and Socials */
+#about, #couldnomics, #how-to-buy, #socials {
+    background-image: url('12.png'); /* Same background for these sections */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Add the background box behind the content */
+.section-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    max-width: 800px; /* Limit the box width */
+    margin: 0 auto; /* Center the box */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+}
+
+/* Couldnomics list styles */
+#couldnomics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#couldnomics ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* How to Buy list styles */
+#how-to-buy ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.buy-btn {
+    background-color: #ff6347;
+    padding: 15px 25px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.buy-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Social section styles */
+#socials .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    background-color: #3b9ae1;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #1d69a6;
+}
+
+/* Transparent Footer */
+footer {
+    background-color: rgba(15, 51, 96, 0); /* Fully transparent footer */
+    padding: 20px;
+    text-align: center;
+    color: #f05454;
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Image Styling */
+.section-image {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add margin below */
+    border-radius: 10px;  /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow */
+}
+
+/* Ensure the image appears above text without interference */
+.section-box {
+    position: relative;
+    z-index: 10; /* Ensure text content is above the background */
+    padding-top: 30px; /* Add space between image and content */
+}
+
+/* Adjust the padding to leave room for images */
+#about, #couldnomics, #how-to-buy, #socials {
+    padding-top: 40px; /* Increase top padding for image space */
+}
