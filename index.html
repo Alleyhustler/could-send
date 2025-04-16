@@ -5,79 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Could Coin - The Most Legendary Memecoin</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#couldnomics">Couldnomics</a></li>
-                <li><a href="#how-to-buy">How to Buy</a></li>
-                <li><a href="#socials">Socials</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation -->
+    <header class="glass-nav">
+        <div class="container">
+            <div class="logo">
+                <img src="image-removebg-preview (10).png" alt="Could Coin Logo" height="40">
+                <span>Could Coin</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#couldnomics" class="nav-link">Couldnomics</a></li>
+                    <li><a href="#how-to-buy" class="nav-link">How to Buy</a></li>
+                    <li><a href="#socials" class="nav-link">Socials</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1></h1>
-        <p></p>
-        <button id="moonButton">SEND IT (CLICK)</button>
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Could <span class="highlight">Send</span></h1>
+            <p class="animate__animated animate__fadeInUp">The most legendary memecoin that COULD change everything</p>
+            <button id="moonButton" class="animate__animated animate__pulse animate__infinite">SEND IT TO THE MOON</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
     </section>
 
-<!-- About Could Coin -->
-<section id="about">
-    <img src="image-removebg-preview (10).png" alt="About Could Coin" class="section-image">
-    <div class="section-box">
-        <h2>What is Could Send?</h2>
-        <p>this coin COULD send, idk bro! the team is good, holders are strong, volume is good, idk COULD send</p>
-    </div>
-</section>
-
-<!-- Couldnomics Section -->
-<section id="couldnomics">
-    <img src="image-removebg-preview (8).png" alt="Couldnomics" class="section-image">
-    <div class="section-box">
-        <h2>Couldnomics</h2>
-        <ul>
-            <li>Total Supply: 1,000,000,000 COULD</li>
-            <li>Community Allocation: 95%</li>
-            <li>Liquidity Pool: 40%</li>
-            <li>Team: 5%</li>
-        </ul>
-    </div>
-</section>
-
-<!-- How to Buy -->
-<section id="how-to-buy">
-    <div class="section-box">
-        <h2>How to Buy $COULD</h2>
-        <ol>
-            <li>Download a Crypto Wallet (like Phantom)</li>
-            <li>Transfer some SOL to your wallet.</li>
-            <li>Go to DEX, PUMPFUN and swap for $COULD!</li>
-            <li>HODL till you like</li>
-        </ol>
-        <button class="buy-btn">Buy $COULD Now!</button>             
-
-    </div>
-</section>
-
-<!-- Socials Section -->
-<section id="socials">
-    <img src="image-removebg-preview (9).png" alt="Social Links" class="section-image">
-    <div class="section-box">
-        <h2>Join the Could Community</h2>
-        <div class="social-links">
-            <a href="https://x.com/couldsend_" target="_blank" class="social-btn">🐦 Twitter</a>
-            <a href="https://t.me/+ED-KjZ34px1lMDE8" target="_blank" class="social-btn">💬 Telegram</a>
+    <!-- About Could Coin -->
+    <section id="about" class="section-parallax">
+        <div class="container">
+            <div class="section-box reveal">
+                <div class="section-header">
+                    <img src="image-removebg-preview (10).png" alt="About Could Coin" class="section-image">
+                    <h2>What is <span class="highlight">Could Send</span>?</h2>
+                </div>
+                <div class="section-content">
+                    <p>This coin COULD send, idk bro! With a dedicated team, diamond-handed holders, and consistent volume, Could Coin has all the ingredients needed for a legendary moonshot.</p>
+                    <p>In the world of unpredictable memecoins, $COULD stands out with its honest premise and vibrant community. Not financial advice, but this COULD be the next big thing!</p>
+                    <div class="counter-stats">
+                        <div class="stat-item">
+                            <div class="counter" data-target="1000">0</div>
+                            <span>Holders</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="counter" data-target="500">0</div>
+                            <span>Transactions</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="counter" data-target="95">0</div>
+                            <span>Community %</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Couldnomics Section -->
+    <section id="couldnomics" class="section-parallax">
+        <div class="container">
+            <div class="section-box reveal">
+                <div class="section-header">
+                    <img src="image-removebg-preview (8).png" alt="Couldnomics" class="section-image">
+                    <h2>Could<span class="highlight">nomics</span></h2>
+                </div>
+                <div class="section-content">
+                    <div class="tokenomics-grid">
+                        <div class="tokenomics-card">
+                            <div class="tokenomics-icon">💰</div>
+                            <div class="tokenomics-info">
+                                <h3>Total Supply</h3>
+                                <p>1,000,000,000 COULD</p>
+                            </div>
+                        </div>
+                        <div class="tokenomics-card">
+                            <div class="tokenomics-icon">👥</div>
+                            <div class="tokenomics-info">
+                                <h3>Community</h3>
+                                <p>95% Allocation</p>
+                            </div>
+                        </div>
+                        <div class="tokenomics-card">
+                            <div class="tokenomics-icon">💧</div>
+                            <div class="tokenomics-info">
+                                <h3>Liquidity</h3>
+                                <p>40% Locked</p>
+                            </div>
+                        </div>
+                        <div class="tokenomics-card">
+                            <div class="tokenomics-icon">👨‍💻</div>
+                            <div class="tokenomics-info">
+                                <h3>Team</h3>
+                                <p>5% Allocation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tokenomics-chart">
+                        <canvas id="tokenomicsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- How to Buy -->
+    <section id="how-to-buy" class="section-parallax">
+        <div class="container">
+            <div class="section-box reveal">
+                <div class="section-header">
+                    <h2>How to Buy <span class="highlight">$COULD</span></h2>
+                </div>
+                <div class="section-content">
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Get a Wallet</h3>
+                                <p>Download Phantom wallet from the app store or as a browser extension</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Get Some SOL</h3>
+                                <p>Transfer SOL to your wallet from an exchange or another wallet</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Connect & Swap</h3>
+                                <p>Go to PUMPFUN DEX, connect your wallet, and swap SOL for $COULD</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>HODL</h3>
+                                <p>Hold your $COULD tokens and watch them potentially grow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-container">
+                        <a href="#" class="buy-btn primary-btn pulse">Buy $COULD Now!</a>
+                        <a href="#" class="chart-btn secondary-btn">View Chart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials Section -->
+    <section id="socials" class="section-parallax">
+        <div class="container">
+            <div class="section-box reveal">
+                <div class="section-header">
+                    <img src="image-removebg-preview (9).png" alt="Social Links" class="section-image">
+                    <h2>Join the <span class="highlight">Could</span> Community</h2>
+                </div>
+                <div class="section-content">
+                    <p>Be part of a legendary community that COULD change your life!</p>
+                    <div class="social-links">
+                        <a href="https://x.com/couldsend_" target="_blank" class="social-btn twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://t.me/+ED-KjZ34px1lMDE8" target="_blank" class="social-btn telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.18-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.21-.08-.07-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.52.36-.99.53-1.4.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.46-.42-1.4-.88.03-.24.29-.48.79-.74 3.07-1.34 5.12-2.22 6.15-2.66 2.93-1.24 3.53-1.46 3.93-1.46.09 0 .28.02.41.09.33.17.42.48.39.68z"></path>
+                            </svg>
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image-removebg-preview (10).png" alt="Could Coin Logo" height="40">
+                    <span>Could Coin</span>
+                </div>
+                <p>© 2025 Could Coin. All rights reserved.</p>
+                <p class="disclaimer">Not financial advice. DYOR. This coin COULD be worthless, idk bro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Rocket Animation Container -->
+    <div id="rocket-container"></div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top">⬆️</button>
 </body>
 </html>
