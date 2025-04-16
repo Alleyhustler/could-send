@@ -674,3 +674,124 @@ footer {
     
     .counter {
         font-size: 36px;
+
+}
+    
+    .tokenomics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: calc(100vh - 70px);
+        width: 100%;
+        background: var(--glass-bg);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+        gap: 0;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .hamburger {
+        display: block;
+        z-index: 101;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    
+    .section-box {
+        padding: 30px 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 32px;
+    }
+    
+    #hero h1 {
+        font-size: 50px;
+    }
+    
+    #hero p {
+        font-size: 18px;
+    }
+    
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .tokenomics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .counter-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hero h1 {
+        font-size: 40px;
+    }
+    
+    #moonButton {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    
+    .section-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .section-content {
+        font-size: 16px;
+    }
+    
+    .primary-btn, .secondary-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
