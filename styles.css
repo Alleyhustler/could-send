@@ -674,8 +674,7 @@ footer {
     
     .counter {
         font-size: 36px;
-
-}
+    }
     
     .tokenomics-grid {
         grid-template-columns: repeat(2, 1fr);
